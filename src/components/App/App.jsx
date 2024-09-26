@@ -10,14 +10,7 @@ function App() {
 
   // Functions
 
-  // Handles user's color change
-  function handleColorChange(e) {
-    console.log(e.target.value);
-    console.log('colorchange');
-    setUserColor(e.target.value);
-  }
-
-  // Grid size in squares
+  // Grid size in squares - size of a square is defined in css
   const gridSize = 50;
   // Making the grid
   const array = [];
@@ -31,7 +24,7 @@ function App() {
   // Rendering
   return (
     <div>
-      <ColorPicker onChange={handleColorChange} />
+      <ColorPicker onChange={(e) => setUserColor(e.target.value)} />
       <div className="grid">
         {array.map((row, rowId) => {
           return (

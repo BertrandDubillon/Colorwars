@@ -3,7 +3,7 @@ const ColorPicker = ({ onChange }) => {
 
   return (
     <div className="colorPicker">
-      <input type="color" onChange={onChange}></input>
+      <input type="color" onChange={onChange} />
     </div>
   );
 };

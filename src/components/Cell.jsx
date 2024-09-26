@@ -13,9 +13,7 @@ const Cell = ({ handle, userColor }) => {
       style={{ backgroundColor: color }}
       onClick={() => changeColor(userColor)}
       type="button"
-    >
-      <div></div>
-    </button>
+    />
   );
 };
 
